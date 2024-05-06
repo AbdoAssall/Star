@@ -49,7 +49,7 @@ export default class TV extends Component {
                         this.state.tv.map((value, index) => {
                             return (
                                 <div key={index} className="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
-                                    <img src={"https://image.tmdb.org/t/p/original" + value.poster_path} className="w-100 rounded" />
+                                    <img src={"https://image.tmdb.org/t/p/original" + value.poster_path} className="w-100 rounded" alt={value.name} />
                                     <p className="pt-2 mb-1">{value.name}</p>
                                     <span>Data: {value.first_air_date}</span>
                                     <p className="">{value.vote_average}</p>

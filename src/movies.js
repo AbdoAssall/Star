@@ -71,7 +71,7 @@ export default class Movies extends Component {
                                         <p><span className="fw-semibold">Data: </span>{value.release_date}</p>
                                         <p><span className="fw-semibold">Rate: </span>{value.vote_average}</p>
                                     </div>
-                                        <img src={"https://image.tmdb.org/t/p/original" + value.poster_path} className="w-100 rounded" />
+                                        <img src={"https://image.tmdb.org/t/p/original" + value.poster_path} className="w-100 rounded" alt={value.title} />
                                         <p className="pt-2 mb-1">{value.title}</p>
                                         <span>Data: {value.release_date}</span>
                                         <div className="star-rating">
