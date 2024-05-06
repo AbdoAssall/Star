@@ -1,3 +1,9 @@
+# Star
+website link 👉 https://abdoassall.github.io/Star/
+to show Trending Movies & TV
+I used existing API 👉 themoviedb 
+Have fun with my website 😎
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
