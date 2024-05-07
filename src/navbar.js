@@ -24,7 +24,7 @@ export default class Navbar extends Component {
                                 <NavLink activeClassName="active" className="nav-link" to="/tv">TV</NavLink>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" role="button" href="/" data-bs-toggle="dropdown" aria-expanded="false">
                                  Treding Day
                                 </a>
                                 <ul className="dropdown-menu bg-dark text-light">
