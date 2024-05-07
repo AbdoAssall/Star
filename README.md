@@ -1,5 +1,5 @@
 # Star
-website link 👉 https://abdoassall.github.io/Star/
+website link 👉 https://starshow.netlify.app/
 
 to show Trending Movies & TV
 
