@@ -9,6 +9,7 @@ import Home from './home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MoviesDays from './moviesday';
 import TVDays from './tvday';
+import Footer from './footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,7 @@ root.render(
     <Route path='/movesday' element={<MoviesDays />} />
     <Route path='/tvday' element={<TVDays />} />
     </Routes>
+    <Footer/>
     </BrowserRouter>
   </React.StrictMode>
 );

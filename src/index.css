@@ -22,11 +22,14 @@ body {
   /* color: #24baef;    Filled star color */
   color: gold;
 }
-
 a {
-  padding: 10px;
+  /* padding: 10px; */
   text-decoration: none;
-  color: var(--bs-nav-link-color);
+  /* color: var(--bs-nav-link-color); */
+  transition: 0.3s;
+}
+.icon-link:hover {
+  opacity: 0.8;
 }
 .active {
   color: var(--bs-navbar-active-color);
@@ -42,8 +45,11 @@ a {
 .dropdown-item:hover {
   background-color: transparent;
 }
-
-
+.icon-up {
+  position: absolute;
+    right: 0;
+    bottom: 17px;
+}
 
 
 .overlay {
