@@ -7,6 +7,8 @@ import Movies from './movies';
 import TV from './tv';
 import Home from './home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MoviesDays from './moviesday';
+import TVDays from './tvday';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,12 +16,13 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <Navbar />
-
     <Routes>
     <Route path='/' element={<Home />} />
     <Route path='/home' element={<Home />} />
-      <Route path='/movies' element={<Movies />} />
-      <Route path='/tv' element={<TV />} />
+    <Route path='/movies' element={<Movies />} />
+    <Route path='/tv' element={<TV />} />
+    <Route path='/movesday' element={<MoviesDays />} />
+    <Route path='/tvday' element={<TVDays />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

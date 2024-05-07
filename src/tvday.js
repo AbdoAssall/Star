@@ -1,12 +1,11 @@
 import { Component } from "react";
 import axios from "axios";
 
-export default class TV extends Component {
-
+export default class TVDays extends Component {
 
     state = { tv: [] }
     async componentDidMount() {
-        let x = await axios.get('https://api.themoviedb.org/3/trending/tv/week?api_key=52bbcddeda849047525b51d6f8a12361')
+        let x = await axios.get('https://api.themoviedb.org/3/trending/tv/day?api_key=52bbcddeda849047525b51d6f8a12361')
         console.log(x.data.results)
         this.setState({ tv: x.data.results })
     }
@@ -42,7 +41,7 @@ export default class TV extends Component {
                     <div className="col-lg-3 col-md-4 col-12">
                         <div className="brd w-50"></div>
                         <h3>Treding <br />TV<br />to watch now</h3>
-                        <p className="secondcolor">most watched tv by weeks</p>
+                        <p className="secondcolor">most watched tv by days</p>
                         <div className="brd w-100"></div>
                     </div>
                     {

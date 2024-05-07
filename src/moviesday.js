@@ -1,21 +1,11 @@
 import { Component } from "react";
 import axios from "axios";
 
-export default class Movies extends Component {
-
-    // movies = [{id:1, title: "Home Alone", imgPath: "https://lumiere-a.akamaihd.net/v1/images/homealone2_7706aa6d.jpeg?region=0%2C0%2C584%2C876"},
-    // {id:2, title: "Home Alone", imgPath:"https://lumiere-a.akamaihd.net/v1/images/homealone2_7706aa6d.jpeg?region=0%2C0%2C584%2C876"},
-    // {id:3, title: "Home Alone", imgPath:"https://lumiere-a.akamaihd.net/v1/images/homealone2_7706aa6d.jpeg?region=0%2C0%2C584%2C876"},
-    // {id:4, title: "Home Alone", imgPath:"https://lumiere-a.akamaihd.net/v1/images/homealone2_7706aa6d.jpeg?region=0%2C0%2C584%2C876"},
-    // {id:5, title: "Home Alone", imgPath:"https://lumiere-a.akamaihd.net/v1/images/homealone2_7706aa6d.jpeg?region=0%2C0%2C584%2C876"},
-    // {id:6, title: "Home Alone", imgPath:"https://lumiere-a.akamaihd.net/v1/images/homealone2_7706aa6d.jpeg?region=0%2C0%2C584%2C876"},
-    // {id:7, title: "Home Alone", imgPath:"https://lumiere-a.akamaihd.net/v1/images/homealone2_7706aa6d.jpeg?region=0%2C0%2C584%2C876"},
-    // {id:8, title: "Home Alone", imgPath:"https://lumiere-a.akamaihd.net/v1/images/homealone2_7706aa6d.jpeg?region=0%2C0%2C584%2C876"}
-    // ]
+export default class MoviesDays extends Component {
 
     state = { movies: [] }
     async componentDidMount() {
-        let x = await axios.get('https://api.themoviedb.org/3/trending/movie/week?api_key=52bbcddeda849047525b51d6f8a12361')
+        let x = await axios.get('https://api.themoviedb.org/3/trending/movie/day?api_key=52bbcddeda849047525b51d6f8a12361')
         console.log(x.data.results)
         this.setState({ movies: x.data.results })
     }
@@ -51,7 +41,7 @@ export default class Movies extends Component {
                     <div className="col-lg-3 col-md-4 col-12">
                         <div className="brd w-50"></div>
                         <h3>Treding <br />Movies<br />to watch now</h3>
-                        <p className="secondcolor">most watched movies by weeks</p>
+                        <p className="secondcolor">most watched movies by days</p>
                         <div className="brd w-100"></div>
                         <div id="star-rating"></div>
                     </div>

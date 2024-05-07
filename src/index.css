@@ -36,6 +36,16 @@ a {
     border: 0;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
+.dropdown-item.active{
+  background-color: transparent;
+}
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+
+
+
 .overlay {
   display: none;
 }
